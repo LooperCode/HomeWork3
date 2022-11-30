@@ -1,4 +1,4 @@
-﻿ int[] stem = {20, 25, 10, 15, 8, 10, 11};
+﻿ int[] stem = {20, 25, 10, 15, 8, 25, 11};
 int size = stem.Length;
 int index = 0;
 int max = (stem[index] + stem[index +1]) + stem[index +2];
@@ -38,6 +38,8 @@ if (sum > maxSum){
 Console.WriteLine(maxSum);
 
 */
+
+
 
 
 
