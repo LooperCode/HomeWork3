@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Введите пятизначное число");
+﻿
+Console.WriteLine("Введите пятизначное число");
 int insert = Convert.ToInt32(Console.ReadLine());
 int thousand = insert;
 int last = insert % 100;
@@ -25,5 +26,22 @@ else {
 }
 }
  
+ // Или просто:
+ /*
+ Console.WriteLine("Введите пятизначное число");
+string? insert = Console.ReadLine();
+char[] reverse = insert.ToCharArray();
+Array.Reverse(reverse);
+string final_reverse = new string(reverse);
+int insert_int = Int32.Parse(insert);
+int final_reverse_int = Int32.Parse(final_reverse);
+if (insert_int == final_reverse_int) {
+    Console.WriteLine ($"Число {insert} является палиндромом, потому что в обратном порядке: {final_reverse}");
+}
+else {
+    Console.WriteLine($"Число {insert} не является палиндромом, потому что в обратном порядке: {final_reverse}");
+    }
 
 
+
+*/
